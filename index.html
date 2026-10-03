@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" data-app="mailroom-analytics" data-layout="tool">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f1f5f9">
+  <meta name="description" content="Explore campaign performance from your CSV export with transparent formulas, clear funnels and no data upload.">
+  <meta property="og:title" content="Mailroom — EMAIL MARKETING · CSV ANALYTICS">
+  <meta property="og:description" content="Explore campaign performance from your CSV export with transparent formulas, clear funnels and no data upload.">
+  <meta property="og:image" content="preview.svg">
+  <title>Mailroom — EMAIL MARKETING · CSV ANALYTICS</title>
+  <link rel="icon" href="preview.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body style="--paper:#f1f5f9;--ink:#202b37;--muted:#718091;--accent:#a6d0ff;--accent2:#ffd278">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement"><span>A FREE, LOCAL-FIRST MARKETING WORKBENCH</span><span>SAMPLE CONTENT · NO TRACKING <b>✳</b></span></div>
+  <header class="site-nav"><a class="brand" href="#top" aria-label="Mailroom home"><span class="brand-mark">◈</span>Mailroom<small>TOOLKIT</small></a><nav id="main-navigation" aria-label="Main navigation"><a href="#workspace">Workspace</a><a href="#notes">About</a><a class="nav-cta" href="#workspace">Open the tool ↗</a></nav><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button></header>
+  <main id="main">
+    <section class="tool-hero" id="top"><div><span class="eyebrow"><i class="eyebrow-dot"></i>EMAIL MARKETING · CSV ANALYTICS</span><h1>Read between<br>the open rates.</h1><p>Explore campaign performance from your CSV export with transparent formulas, clear funnels and no data upload.</p><div class="tool-trust"><span class="lock-mark">⌑</span><span>Runs in your browser <b>·</b> No account <b>·</b> Your data stays local</span></div></div><div class="tool-hero-side"><div class="metric-orb"><b>Your data stays local</b><span>CSV parsing and analysis in-browser</span></div><span class="orb-caption">BUILT FOR CLEARER DECISIONS</span></div></section>
+    <section id="workspace" class="tool-workspace"><div class="analytics-wrap"><section class="panel import-panel"><div><span class="eyebrow">CAMPAIGN EXPORT</span><h2>Bring a CSV. Keep it local.</h2><p>Use columns for campaign, sent, opens, clicks, conversions and revenue. Date and source are optional.</p></div><div class="import-actions"><label class="file-drop" for="email-csv"><span class="upload-icon">↑</span><b>Choose a CSV file</b><small>or load the included sample data</small></label><input id="email-csv" type="file" accept=".csv,text/csv" class="sr-only"><button id="load-email-sample" class="btn btn--accent">Load sample campaigns</button><span id="email-status" aria-live="polite" class="micro-note">No file is uploaded to a server.</span></div></section><section class="kpi-grid" id="email-kpis"><article class="metric-card"><span>Delivered</span><strong>—</strong><small>campaign emails</small></article><article class="metric-card"><span>Open rate</span><strong>—</strong><small>opens ÷ delivered</small></article><article class="metric-card"><span>Click rate</span><strong>—</strong><small>clicks ÷ delivered</small></article><article class="metric-card"><span>Conversion rate</span><strong>—</strong><small>conversions ÷ delivered</small></article></section><section class="panel"><div class="panel-head"><span class="eyebrow">CAMPAIGN BREAKDOWN</span><button id="download-email-report" class="text-button">Export report ↓</button></div><div class="table-scroll"><table class="data-table"><thead><tr><th>Campaign</th><th>Sent</th><th>Open</th><th>Click</th><th>Conv.</th><th>Revenue</th></tr></thead><tbody id="email-table"><tr><td colspan="6" class="empty-cell">Load the sample or choose a CSV to begin.</td></tr></tbody></table></div></section></div></section>
+    <section class="notes-section notes-section--tool" id="notes"><div><span class="eyebrow">SCOPE & METHOD</span><h2>A helpful lens, with its limits in view.</h2></div><div class="notes-copy"><p>This small tool makes its inputs and assumptions visible. It runs locally in your browser and never sends the data you enter to an external service.</p><p>Use results as a practical starting point, then check platform documentation, real search results and first-hand research before making business decisions.</p><a href="README.md" class="text-button">Read the project notes ↗</a></div></section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="#top"><span class="brand-mark">✳</span>Mailroom</a><p>A small, transparent tool for better marketing work.</p><div class="footer-links"><a href="#top">Back to top ↑</a><a href="README.md">Documentation</a><span>Built by Ronak Soltani · 2026</span></div></footer>
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
